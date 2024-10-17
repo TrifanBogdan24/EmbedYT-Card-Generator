@@ -1,5 +1,9 @@
 # Embed YouTube Card Generator
 
+> **CLI** tool to create embedded YouTube cards for HTML/MarkDown projects.
+>
+> Bring your YouTube links to life!
+
 🚀 Glow up your HTML/Markdown files with this simple Python script!
 Just provide a YouTube URL as input, and it generates a sleek, clickable YouTube card for you.
 Perfect for embedding videos in your blog, documentation, or personal projects.
