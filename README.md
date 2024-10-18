@@ -172,3 +172,28 @@ $ html_md_youtube_card --url >> READ-ME.md
 > `--url=`
 > This option expects a value after the **equal sign**,
 > the URL of the YouTube clip.
+
+
+
+
+
+# My advice on how to use it
+---
+
+
+- STEP 1: **Redirect** the output of the `html_md_youtube_card` **CLI tool** to a temporary file
+
+```bash
+$ html_md_youtube_card https://www.youtube.com/shorts/Nl9pcj79byY?feature=share > tmp.md
+```
+
+
+- STEP 2: Copy the content of the temporary file (in this case - *tmp.md*) and paste it where you need it
+
+
+- STEP 3: Remove the temporary file
+
+```bash
+$ rm -f tmp.md
+```
+
