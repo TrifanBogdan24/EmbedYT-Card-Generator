@@ -197,3 +197,8 @@ $ html_md_youtube_card https://www.youtube.com/shorts/Nl9pcj79byY?feature=share 
 $ rm -f tmp.md
 ```
 
+> NOTE:
+> 
+> Give it more tries.
+> It might not work as expected in the first place.
+
