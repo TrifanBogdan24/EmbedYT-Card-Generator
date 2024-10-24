@@ -15,7 +15,7 @@ This card comes with:
 - 🔗 A clickable link to the video (both on the image and as text below).
 
 
-# Preview/Results
+## Preview/Results
 
 ![img](Images/img-01.png)
 ![img](Images/img-02.png)
@@ -23,7 +23,7 @@ This card comes with:
 
 
 
-# Why use it?
+## Why use it?
 
 
 If you want to make your HTML/Markdown files stand out and look clean,
@@ -33,7 +33,7 @@ No need to wrestle with complex embeds—this card is lightweight, visually appe
 
 
 
-# What do you get?
+## What do you get?
 
 Clean, ready-to-use HTML that you can drop anywhere:
 
@@ -66,7 +66,7 @@ Clean, ready-to-use HTML that you can drop anywhere:
 
 
 
-# My Personal Motivation
+## My Personal Motivation
 
 ✨ **I set out to bring boring, lifeless links in Markdown to life!** ✨
 
@@ -84,7 +84,7 @@ When working with Markdown files, the results really shine when viewed with tool
 
 
 
-# Description
+## Description
 
 This Python script is a **CLI tool**
 that aims to generate HTML/MarkDown code
@@ -114,7 +114,7 @@ The HTML/MD code will also include relevant comments.
 
 
 
-# Dependencies
+## Dependencies
 
 This tool uses the `pytube` module.
 
@@ -125,7 +125,7 @@ $ pip3 install pytube    # getting YouTube clip info
 
 
 
-# Installation
+## Installation
 
 
 Please see [install.sh](install.sh).
@@ -139,7 +139,7 @@ $ sudo cp html_md_youtube_card.py /usr/local/bin/html_md_youtube_card
 
 
 
-# Uninstall
+## Uninstall
 
 You can use the script [uninstall.sh](uninstall.sh).
 
@@ -149,7 +149,7 @@ $ sudo rm -i /usr/local/bin/html_md_youtube_card
 ```
 
 
-# How to use it?
+## How to use it?
 
 ```bash
 # Show help output
@@ -164,8 +164,8 @@ $ html_md_youtube_card --url=$URL
 # This tool is more powerfull when used with redirection
 $ html_md_youtube_card $URL > READ-ME.md
 $ html_md_youtube_card $URL >> READ-ME.md
-$ html_md_youtube_card --url > READ-ME.md
-$ html_md_youtube_card --url >> READ-ME.md
+$ html_md_youtube_card --url=$URL > READ-ME.md
+$ html_md_youtube_card --url=$URL >> READ-ME.md
 ```
 
 
@@ -174,11 +174,30 @@ $ html_md_youtube_card --url >> READ-ME.md
 > the URL of the YouTube clip.
 
 
+## How to Run Using Python | An Alternative Approach
+
+
+```bash
+# Show help output
+$ python3 html_md_youtube_card.py -h
+$ python3 html_md_youtube_card.py --help
+
+
+$ python3 html_md_youtube_card.py $URL 
+$ python3 html_md_youtube_card.py --url=$URL
+
+
+# This tool is more powerfull when used with redirection
+$ python3 html_md_youtube_card.py $URL > READ-ME.md
+$ python3 html_md_youtube_card.py $URL >> READ-ME.md
+$ python3 html_md_youtube_card.py --url=$URL > READ-ME.md
+$ python3 html_md_youtube_card.py --url=$URL >> READ-ME.md
+```
 
 
 
-# My advice on how to use it
----
+
+## My advice on how to use it
 
 
 - STEP 1: **Redirect** the output of the `html_md_youtube_card` **CLI tool** to a temporary file
