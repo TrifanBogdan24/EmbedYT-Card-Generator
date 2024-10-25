@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from pytube import YouTube
+from pytubefix import YouTube
 import sys
 
 
@@ -43,7 +43,7 @@ def autoget_youtube_video_info(URL: str) -> tuple[str, str, str]:
     """
     try:
         # Create a YouTube object
-        yt = YouTube(URL)
+        yt = YouTube(URL, use_oauth=True, allow_oauth_cache=True)
 
         # Get YouTube clip info
         thumbnail_url: str = yt.thumbnail_url

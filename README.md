@@ -4,6 +4,10 @@
 >
 > Bring your YouTube links to life!
 
+
+🤖 Automate the boring stuff with Python!
+
+
 🚀 Glow up your HTML/Markdown files with this simple Python script!
 Just provide a YouTube URL as input, and it generates a sleek, clickable YouTube card for you.
 Perfect for embedding videos in your blog, documentation, or personal projects.
@@ -40,26 +44,26 @@ Clean, ready-to-use HTML that you can drop anywhere:
 ```html
 <!-- Markdown Crash Course - Beginner Tutorial -->
 <div style="border: 1px solid #ddd; padding: 10px; max-width: 300px; position: relative; display: inline-block;">
-	<a href="https://youtu.be/34_dRW42kYI" target="_blank" style="display: block; position: relative;">
-		<!--  Thumbnail -->
-		<img src="https://i.ytimg.com/vi/34_dRW42kYI/hq720.jpg" alt="YouTube Thumbnail" style="width: 100%; display: block;">
-		<!-- Play button in the center -->
-		<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(255, 0, 0, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-			<div style="width: 0; height: 0; border-left: 15px solid white; border-top: 10px solid transparent; border-bottom: 10px solid transparent;"></div>
-		</div>
-		<!-- Black rectangle with duration at bottom-right -->
-        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0, 0, 0, 0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">
-			21:24
-		</div>
-	</a>
-	<div style="margin: 0 auto; width: 90%; text-align: left;">
-		<!-- Text of URL -->
-		<p style="margin: 10px 0;"><a href="https://youtu.be/34_dRW42kYI" target="_blank">https://youtu.be/34_dRW42kYI</a></p>
-		<!-- Separation line -->
-		<hr style="border: 0; height: 1px; background: #ddd; margin: 10px 0;">
-		<!-- Text of Title -->
-		<p style="margin: 10px 0;"><a href="https://youtu.be/34_dRW42kYI" target="_blank">Markdown Crash Course - Beginner Tutorial</a></p>
-	</div>
+        <a href="https://youtu.be/34_dRW42kYI" target="_blank" style="display: block; position: relative;">
+                <!--  Thumbnail -->
+                <img src="https://i.ytimg.com/vi/34_dRW42kYI/sddefault.jpg" alt="YouTube Thumbnail" style="width: 100%; display: block;">
+                <!-- Play button in the center -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(255, 0, 0, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 0; height: 0; border-left: 15px solid white; border-top: 10px solid transparent; border-bottom: 10px solid transparent;"></div>
+                </div>
+                <!-- Black rectangle with duration at bottom-right -->
+                <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0, 0, 0, 0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">
+                        21:24
+                </div>
+        </a>
+        <div style="margin: 0 auto; width: 90%; text-align: left;">
+                <!-- Text of URL -->
+                <p style="margin: 10px 0;"><a href="https://youtu.be/34_dRW42kYI" target="_blank">https://youtu.be/34_dRW42kYI</a></p>
+                <!-- Separation line -->
+                <hr style="border: 0; height: 1px; background: #ddd; margin: 10px 0;">
+                <!-- Text of Title -->
+                <p style="margin: 10px 0;"><a href="https://youtu.be/34_dRW42kYI" target="_blank">Markdown Crash Course - Beginner Tutorial</a></p>
+        </div>
 </div>
 
 ```
@@ -119,9 +123,36 @@ The HTML/MD code will also include relevant comments.
 This tool uses the `pytube` module.
 
 
+
+
 ```bash
 $ pip3 install pytube    # getting YouTube clip info
 ```
+
+
+
+
+> IMPORTANT NOTE:
+>
+> Given the numerous problems and errors caused by the `pytube` module,
+> please check this link <https://github.com/pytube/pytube/issues/2059>,
+> my project now uses the `pytubefix` module.
+>
+> The `pytubefix` module's documentation is available on the GitHub page,
+> at the following link: <https://github.com/JuanBindez/pytubefix.git>.
+
+
+
+
+```bash
+$ pip3 install pytubefix
+```
+
+
+Also, when running the `html_md_yt_card` **CLI tool** for the first time,
+it **might** ask for authentication on Google.
+Without authentication, you'll be seen as a bot and an error message will be dispalyed.
+
 
 
 
