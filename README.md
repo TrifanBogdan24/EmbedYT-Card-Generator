@@ -243,6 +243,7 @@ $ html_md_youtube_card https://www.youtube.com/shorts/Nl9pcj79byY?feature=share 
 
 - STEP 3: Remove the temporary file
 
+
 ```bash
 $ rm -f tmp.md
 ```
@@ -252,3 +253,49 @@ $ rm -f tmp.md
 > Give it more tries.
 > It might not work as expected in the first place.
 
+
+
+## Copying the output of the CLI tool directly to `clipboard`
+
+
+An alternative approach for the above advice would to
+use an additional **command line tool**, that
+being **piped** the output of `html_md_youtube_card`,
+it will copy it directly to **clipboard**.
+
+
+On Linux, you can use `xclip`:
+```bash
+$ sudo apt-get install xclip
+
+
+$ html_md_youtube_card $ULR | xclip -selection clipboard
+$ python3 html_md_youtube_card.py $URL | xclip -selection clipboard
+
+
+# It's a great ideea to alias it and place it in your configuration file
+$ echo "alias clip='xclip -selection clipboard'" >> ~/.bashrc
+$ source ~/.bahrc
+$ type clip
+```
+
+
+
+
+On MacOS, you can use `pbcopy`:
+```sh
+$ html_md_youtube_card $URL | pbcopy
+$ python3 html_md_youtube_card.py $URL | pbcopy
+```
+
+
+On Windows, you can use `clip`
+```powershell
+> html_md_youtube_card $URL | clip
+> python3 html_md_youtube_card.py $URL | clip
+```
+
+
+
+
+> Source of inspiration: <https://medium.com/@brianislevu/navigating-with-the-keyboard-4528267ce6b3>
