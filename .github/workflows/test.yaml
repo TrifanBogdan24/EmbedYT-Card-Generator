@@ -22,7 +22,9 @@ jobs:
           pip3 --version
 
       - name: Install Pytube
-        run: pip3 install pytube
+        run: |
+          pip3 install pytube
+          pip3 install pytubefix
 
       - name: Verify Pytube installation
         run: pip3 freeze | grep 'pytube'
