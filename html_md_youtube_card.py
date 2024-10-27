@@ -101,7 +101,7 @@ def help_option() -> None:
     print("\t-h, --help     Display this suggestive help text and exit.")
     print(f"\t--url=        Pass the URL as value to this flag.")
     print()
-    print("See more info at project home page: https://github.com/TrifanBogdan24/EmbedYT-Card-Generator.git")
+    print("See more info at project home page: https://github.com/TrifanBogdan24/EmbedYT-Card-Generator-M1.git")
     print()
 
 def main():

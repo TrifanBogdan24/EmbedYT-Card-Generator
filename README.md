@@ -149,7 +149,7 @@ $ pip3 install pytubefix
 ```
 
 
-Also, when running the `html_md_yt_card` **CLI tool** for the first time,
+Also, when running the `html_md_youtube_card` **CLI tool** for the first time,
 it **might** ask for authentication on Google.
 Without authentication, you'll be seen as a bot and an error message will be dispalyed.
 
