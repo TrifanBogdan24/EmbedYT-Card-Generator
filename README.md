@@ -19,6 +19,9 @@ This card comes with:
 - 🔗 A clickable link to the video (both on the image and as text below).
 
 
+> Checkout the other similar repo of mine [here](https://github.com/TrifanBogdan24/EmbedYT-Card-Generator-M2.git).
+
+
 ## Preview/Results
 
 ![img](Images/img-01.png)
@@ -99,7 +102,7 @@ It will take a single argument in the command line,
 the `URL`, representing the link to the YouTube Video/Short.
 
 
-The script uses `pytube` module to automatically get
+The script uses `pytube`/`pytubefix` **API** to automatically get
 relevant data regarding the clip, including:
 - Thumbnail
 - Title
