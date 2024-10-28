@@ -27,6 +27,7 @@ This card comes with:
 ![img](Images/img-01.png)
 ![img](Images/img-02.png)
 ![img](Images/img-03.png)
+![img](Images/img-04.png)
 
 
 
@@ -70,6 +71,14 @@ Clean, ready-to-use HTML that you can drop anywhere:
 </div>
 
 ```
+
+
+
+
+Rendered result:
+
+![img](Images/img-01.png)
+
 
 
 
